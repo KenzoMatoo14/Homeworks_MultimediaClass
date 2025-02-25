@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+
+%Section variables
+%Change these values accordingly
+\newcommand{\studentNameID}{Kenzo Matoo López (0263328)}
+\newcommand{\studentBachelor}{Ingenieria en Sistemas y Graficas computacionales}
+\newcommand{\photoFilename}{images/JohnPhoto}
+\newcommand{\photoClipPositionX}{0}
+\newcommand{\photoClipPositionY}{0}
+\newcommand{\photoSize}{5cm}
+%End section variables
+
+\include{includes/config}
+
+\begin{document}
+\fontfamily{lmss}\selectfont
+\BgThispage
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \begin{tikzpicture}
+        \clip (\photoClipPositionX{},\photoClipPositionY{})  circle (2.5cm) ;
+        \node[anchor=center] at (0,0) {\includegraphics[width=\photoSize{}]{\photoFilename}}; 
+    \end{tikzpicture}
+\end{wrapfigure}
+
+%Section report
+\nocite{wikipedia_john_carmack_2024} %Reference for the photo used
+
+\textbf{John D. Carmack (born in 1970)} is a legendary programmer, game developer, and aerospace engineer known for revolutionizing the gaming industry with 3D graphics and real-time rendering techniques. Born in Shawnee Mission, Kansas, Carmack developed an interest in programming at an early age. He co-founded id Software in 1991, where he led the development of groundbreaking titles such as \textit{Wolfenstein 3D}, \textit{Doom}, and \textit{Quake}.
+
+Carmack was a pioneer in 3D graphics engines, creating some of the most influential game engines in history. His work on \textit{Doom} and \textit{Quake} established the foundation for modern first-person shooters and set industry standards for real-time rendering, multiplayer gaming, and modding communities. His innovations in binary space partitioning, lightmaps, and dynamic rendering techniques revolutionized video game graphics.
+
+Beyond gaming, Carmack also played a key role in the aerospace industry with Armadillo Aerospace, working on vertical takeoff and landing (VTOL) technology. Later, he joined Oculus VR as Chief Technology Officer, contributing significantly to the advancement of virtual reality technology. His efforts helped shape the modern VR landscape, influencing the development of the Oculus Rift and other head-mounted displays.
+
+Carmack is also an advocate for open-source development, frequently sharing his knowledge and releasing game engines for public use. His dedication to pushing technological boundaries has earned him multiple awards, including a BAFTA Fellowship and entry into the AIAS Hall of Fame. His work continues to inspire developers worldwide, making him one of the most influential figures in video game history.
+
+\textbf{Most Important Contributions}
+\begin{multicols}{2}
+    \begin{itemize}
+        \itemsep 0em
+        \item Lead developer of \textit{Wolfenstein 3D}, \textit{Doom}, and \textit{Quake}.
+        \item Pioneered real-time 3D rendering techniques.
+        \item Created the id Tech engine series, influencing countless games.
+        \item Contributed to multiplayer gaming and online connectivity.
+        \item Founded Armadillo Aerospace, working on private spaceflight.
+        \item Advanced virtual reality technology at Oculus VR.
+        \item Advocate for open-source game engine development.
+    \end{itemize}
+\end{multicols}
+%End report
+
+\BgThispage
+\bibliographystyle{plain}
+\bibliography{references}
+\end{document}

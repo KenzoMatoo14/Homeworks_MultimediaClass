@@ -1,0 +1,54 @@
+\documentclass[12pt]{article}
+
+%Section variables
+%Change these values accordingly
+\newcommand{\studentNameID}{Kenzo Matoo López (0263328)}
+\newcommand{\studentBachelor}{Ingeniería en Sistemas y Gráficas Computacionales}
+\newcommand{\photoFilename}{images/IvanPhoto}
+\newcommand{\photoClipPositionX}{0}
+\newcommand{\photoClipPositionY}{0}
+\newcommand{\photoSize}{6cm}
+%End section variables
+
+\include{includes/config}
+
+\begin{document}
+\fontfamily{lmss}\selectfont
+\BgThispage
+\begin{wrapfigure}{r}{0.3\textwidth}
+    \begin{tikzpicture}
+        \clip (\photoClipPositionX{},\photoClipPositionY{})  circle (2.5cm) ;
+        \node[anchor=center] at (0,0) {\includegraphics[width=\photoSize{}]{\photoFilename}}; 
+    \end{tikzpicture}
+\end{wrapfigure}
+
+%Section report
+
+\textbf{Ivan Edward Sutherland (born 1938)} is a pioneer in computer science, particularly in computer graphics and virtual reality systems. He was born in Hastings, Nebraska, and earned his Bachelor's degree in electrical engineering from Carnegie Mellon University. Later, he completed his Master's and Ph.D. at the Massachusetts Institute of Technology (MIT), where he developed the revolutionary interactive graphics system Sketchpad in 1963 as part of his doctoral thesis.
+
+Sketchpad was the first graphical application based on an interactive user interface, laying the foundation for what we now know as graphical user interfaces. His work profoundly influenced the development of computer-aided design (CAD), virtual reality, and interactive graphical environments.
+
+Throughout his career, Sutherland worked at various prestigious institutions, including ARPA (now DARPA), the University of Utah, Evans and Sutherland (a company he co-founded), and Sun Microsystems. At the University of Utah, he was part of the team that propelled the modern era of computer graphics, influencing key figures such as Edwin Catmull and Jim Clark.
+
+His legacy in computer graphics, 3D modeling, and human-computer interaction is unquestionable. He has received numerous awards, including the Turing Award in 1988 and the United States National Medal of Technology and Innovation in 2012.
+
+\textbf{Most Important Contributions}
+\begin{multicols}{2}
+    \begin{itemize}
+        \itemsep 0em
+        \item Created Sketchpad, the first interactive graphics software.
+        \item Developed the theory and foundations of computer graphics.
+        \item Pioneer in computer-aided design (CAD).
+        \item Contributed to virtual reality with the first head-mounted display (The Sword of Damocles).
+        \item Founder of Evans and Sutherland, a key company in graphics and simulation.
+        \item Key influence on the education of leaders in computer graphics.
+        \item Advancements in computer graphics algorithms and technologies that shaped modern CGI.
+        \item His work in interactive systems paved the way for gaming and simulation technologies.
+    \end{itemize}
+\end{multicols}
+
+\BgThispage
+\bibliographystyle{plain}
+\bibliography{references}
+\nocite{wikipedia_sutherland}
+\end{document}
